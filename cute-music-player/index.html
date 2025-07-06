@@ -1,0 +1,50 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Cute Music Player</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="player-container">
+    <h1 class="title">My Cute Music Player <span>💖✨</span></h1>
+
+    <div class="player-box">
+      <img src="assets/image.gif" alt="Heart Icon" class="cover-art" />
+
+      <div class="track-info">
+        <h2 id="track-name">Born to Die</h2>
+        <p id="track-duration">2:58</p>
+      </div>
+
+      <div class="controls">
+        <button id="prev">⏮️</button>
+        <button id="play">⏯️</button>
+        <button id="next">⏭️</button>
+      </div>
+
+      <div class="progress-bar">
+        <span id="current-time">0:00</span>
+        <input type="range" id="progress" value="0" />
+        <span id="total-duration">3:20</span>
+      </div>
+    </div>
+
+    <div class="tracklist">
+      <h3>Track List <span>🌸</span></h3>
+      <ul>
+        <li data-src="songs/song1.mp3">Born to Die</li>
+        <li data-src="songs/song2.mp3">Dandelions</li>
+        <li data-src="songs/song3.mp3">Aaja Piya Tohe Pyaar du</li>
+      </ul>
+    </div>
+
+    <audio id="audio-player" src="songs/song1.mp3"></audio>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
